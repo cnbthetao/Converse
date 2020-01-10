@@ -1,0 +1,24 @@
+$colors: (
+  a: #ffa,
+  b: #acc,
+  c: #bca,
+  d: #aff,
+  e: #fad,
+  f: #efa,
+  g: #dac,
+  h: #bcf,
+  i: #bad,
+  j: #1fa,
+  k: #3ab,
+  l: #6af,
+  m: #4fe
+);
+%sbox {
+    width: $page_width;
+    height: 100px;
+    margin: 0 auto;
+  }
+  #section_2 {
+    @extend %sbox;
+    background: map-get($colors, h);
+  }

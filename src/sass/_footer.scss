@@ -1,0 +1,25 @@
+$colors: (
+  a: #ffa,
+  b: #acc,
+  c: #bca,
+  d: #aff,
+  e: #fad,
+  f: #efa,
+  g: #dac,
+  h: #bcf,
+  i: #bad,
+  j: #1fa,
+  k: #3ab,
+  l: #6af,
+  m: #4fe
+);
+
+%box {
+  width: $page_container;
+  height: 100px;
+  margin: 0 auto;
+}
+#footer {
+    @extend %box;
+    background: map-get($colors, m);
+  }
