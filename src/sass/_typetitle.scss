@@ -1,25 +1,35 @@
-$colors: (
-  a: #ffa,
-  b: #acc,
-  c: #bca,
-  d: #aff,
-  e: #fad,
-  f: #efa,
-  g: #dac,
-  h: #bcf,
-  i: #bad,
-  j: #1fa,
-  k: #3ab,
-  l: #6af,
-  m: #4fe
-);
-%sbox {
-    width: $page_width;
-    height: 100px;
-    margin: 0 auto;
-  }
-  
 #typetitle {
-    @extend %sbox;
-    background: map-get($colors, e);
-  }
+  width: 100%;
+  height: 36px;
+  // background: #ffa;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#typetitle ul {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  // background: red;
+}
+
+#typetitle ul li{
+ font-size:15px;
+  margin-top:8px;
+  display: inline-block;
+  margin-left:8px;
+  padding:5px 0;
+  color:#999;
+  cursor: pointer;
+}
+// #typetitle ul li:first-child {
+//   cursor: pointer;
+//   font-size: 15px;
+//   // border-top: 1px solid #fff;
+//   // color:#999;
+  
+// }
+#typetitle ul li:hover{
+  color:black;
+  text-decoration: overline;
+}

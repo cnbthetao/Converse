@@ -1,25 +1,98 @@
-$colors: (
-  a: #ffa,
-  b: #acc,
-  c: #bca,
-  d: #aff,
-  e: #fad,
-  f: #efa,
-  g: #dac,
-  h: #bcf,
-  i: #bad,
-  j: #1fa,
-  k: #3ab,
-  l: #6af,
-  m: #4fe
-);
-%sbox {
-  width: $page_width;
-  height: 100px;
+#section_3 {
+  width: 100%;
+  // background: red;
+  //  height:1000px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+.section_3_content {
+  width: 1000px;
+  height: 536px;
   margin: 0 auto;
+  // background: yellow;
+  margin-top: 40px;
+}
+.section_3_title {
+  width: 1000xp;
+  height: 40px;
+  background: #464646;
+  margin: 0 auto;
+  img {
+    width: 19px;
+    height: 19px;
+    margin: 10px 11px 0 20px;
+    float: left;
+  }
+  span {
+    float: left;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: white;
+  }
+}
+.section_3_main{
+  width:1000px;
+  height:476px;
+  // background: blue;
+  margin: 20px 0 0 0 ;
+}
+.section_3_main_left{
+  width:488px;
+  height:366px;
+  border:1px solid black;
+  float: left;
+}
+.section_3_main_right{
+  width:488px;
+  height:366px;
+  border:1px solid black;
+  float: right;
+}
+.section_3_main_left_title{
+  font-size:24px;
+  margin:17px 0 17px 0;
+  cursor: pointer;
+}
+.section_3_main_right_title{
+  font-size:24px;
+  margin:17px 0 17px 0;
+  cursor: pointer;
+}
+.section_3_more{
+  width:488px;
+  height:50px;
+  // background:black;
+  margin: 16px 0 0 0 ;
+  // text-align: center;
+  position: relative;
+  cursor: pointer; 
+  a{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 48px;
+    width:185.4px;
+    height:48px;
+    color:white;
+    background:black;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    // overflow: hidden;
+    
+  }
+  a:hover .section_3_icon{
+    background: url(../images/sprites_header_footer.png) -40px -163px;
+  }
+  a:hover {
+    background:white;
+    color:black;
+  }
+}
+.section_3_icon{
+  vertical-align: middle;
+  display: inline-block;
+  width:20px;
+  height:30px;
+  background: url(../images/sprites_header_footer.png) -9px -163px;
 }
 
-#section_3 {
-    @extend %sbox;
-    background: map-get($colors, i);
-  }

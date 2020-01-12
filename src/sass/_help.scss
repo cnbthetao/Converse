@@ -1,25 +1,69 @@
-$colors: (
-  a: #ffa,
-  b: #acc,
-  c: #bca,
-  d: #aff,
-  e: #fad,
-  f: #efa,
-  g: #dac,
-  h: #bcf,
-  i: #bad,
-  j: #1fa,
-  k: #3ab,
-  l: #6af,
-  m: #4fe
-);
-
-%box {
-  width: $page_container;
-  height: 100px;
-  margin: 0 auto;
-}
 #help {
-    @extend %box;
-    background: map-get($colors, l);
+  width: 1000px;
+  height: 610px;
+  // background: red;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+.help_title {
+  width: 100%;
+  height: 30px;
+  margin: 20px 0;
+  // background: yellow;
+  position: relative;
+}
+.help_title:before {
+  background-color: #b7b7b7;
+  content: "";
+  height: 1px;
+  left: 1.5%;
+  position: absolute;
+  top: 15px;
+  width: 97%;
+}
+.help_sort {
+  width: 240px;
+  height: 280px;
+  // background: blue;
+  float: left;
+  li {
+    width: 240px;
+    height: 20px;
   }
+ 
+}
+.help_start {
+  margin-bottom: 20px;
+  // background: green;
+  text-align: center;
+  line-height: 20px;
+}
+.help_1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+.help_second{
+  text-align: center;
+  line-height: 20px;
+}
+.help_second a{
+  font-size: 14px;
+  color:#333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.help_3{
+  text-align: center;
+  line-height: 20px;
+}
+.help_3 a{
+  font-size: 14px;
+  color:#333;
+  text-decoration: none;
+}
+.help_sort li a:hover{
+  color:#999;
+}

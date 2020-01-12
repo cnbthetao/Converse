@@ -1,24 +1,119 @@
-$colors: (
-  a: #ffa,
-  b: #acc,
-  c: #bca,
-  d: #aff,
-  e: #fad,
-  f: #efa,
-  g: #dac,
-  h: #bcf,
-  i: #bad,
-  j: #1fa,
-  k: #3ab,
-  l: #6af,
-  m: #4fe
-);
-%sbox {
-    width: $page_width;
-    height: 100px;
-    margin: 0 auto;
+#section_1 {
+  width: 1000px;
+  margin: 0 auto;
+  .section_1_title {
+    height: 30px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
   }
-  #section_1 {
-    @extend %sbox;
-    background: map-get($colors, f);
+}
+.section_1_title:before {
+  background: #b7b7b7;
+  content: "";
+  height: 1px;
+  left: 1.5%;
+  position: absolute;
+  top: 15px;
+  width: 97%;
+}
+.section_1_title h1 {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 0 40px;
+  background: white;
+  position: relative;
+  color: #333;
+}
+
+// 内容
+.section_1_wrap_content {
+  width: 1000px;
+  li {
+    display: inline-block;
+    width: 24%;
+    height: 250x;
+    // background: green;
+    list-style: none;
+    div {
+      width: 100%;
+      height: 229.6px;
+      margin-top: 20px;
+      // background: yellow;
+      text-align: center;
+      .section_1_link{
+        width: 100%;
+        height: 29.6px;
+        font-size: 24px;
+        line-height: 30px;
+        color:#333;
+        text-decoration: none;
+      }
+    }
   }
+}
+.section_1_wrap_content li:hover .section_1_link{
+  text-decoration: underline;
+}
+.section_style_1:hover {
+  border:1px solid black;
+}
+.viewAll_button {
+  width: 1000px;
+  height: 48px;
+  // background: blue;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+
+  a {
+    display: inline-block;
+    width: 368px;
+    height: 46px;
+    background: black;
+    border: 1px solid black;
+    line-height: 46px;
+    padding: 0 25px;
+    text-decoration: none;
+    color: white;
+  }
+  &:hover a {
+    background: white;
+    color: black;
+  }
+  &:hover .viewAll_button_right {
+    background: url(../images/sprites_header_footer.png) -40px -163px;
+    transition: 0.3s;
+  }
+}
+.viewAll_button_right {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: url(../images/sprites_header_footer.png) -9px -163px;
+  top: 10px;
+  right: 365px;
+}
+hr{
+  margin:20px 0;
+}
+.section_1_link_2{
+  display: inline-block;
+  width:165px;
+  height:165px;
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+.section_style_1{
+  height:300px;
+}
+.section_1_introduce a{
+  color:black;
+  text-decoration: none;
+ 
+}

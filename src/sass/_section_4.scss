@@ -1,24 +1,95 @@
-$colors: (
-  a: #ffa,
-  b: #acc,
-  c: #bca,
-  d: #aff,
-  e: #fad,
-  f: #efa,
-  g: #dac,
-  h: #bcf,
-  i: #bad,
-  j: #1fa,
-  k: #3ab,
-  l: #6af,
-  m: #4fe
-);
-%sbox {
-  width: $page_width;
-  height: 100px;
-  margin: 0 auto;
-}
 #section_4 {
-    @extend %sbox;
-    background: map-get($colors, j);
+  width: 1000px;
+  height: 394px;
+  // background: red;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.section_4_title {
+  width: 1000xp;
+  height: 40px;
+  background: #464646;
+  margin: 0 auto;
+  img {
+    width: 19px;
+    height: 19px;
+    margin: 10px 11px 0 20px;
+    float: left;
   }
+  span {
+    float: left;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: white;
+  }
+}
+.section_4_main {
+  width: 1000px;
+  height: 334px;
+  margin-top: 20px;
+  // background: yellow;
+}
+.section_4_main_1 {
+  float: left;
+  width: 320px;
+  height: 334px;
+  // background: blue;
+  .section_4_main_1_1{
+    display: inline-block;
+    width:320px;
+    height:240px;
+    border: 1px solid black;
+    img{
+      width:100%;
+      height:100%;
+    }
+    
+  }
+}
+.section_4_main_2 {
+  float: left;
+  width: 320px;
+  height: 334px;
+  margin-left: 19.2px;
+  // background: orange;
+}
+.section_4_main_3 {
+  float: left;
+  width: 320px;
+  height: 334px;
+  margin-left: 1.92%;
+  // background: green;
+}
+.section_4_main_title{
+  font-size: 24px;
+  margin:13px 0;
+  cursor: pointer;
+}
+.section_4_main_title:hover{
+  text-decoration: underline;
+  color:#999;
+  transition-delay:0.3s ;
+}
+.section_4_main_more_1{
+  width:320px;
+  height:42px;
+  font-size: 18px;
+  text-decoration: underline;
+  color:#000;
+  
+}
+.section_4_icon{
+    vertical-align: middle;
+    display: inline-block;
+    width:20px;
+    height:30px;
+    background: url(../images/sprites_header_footer.png) -40px -163px;
+}
+.section_4_main_more_1:hover{
+  color:#999;
+  transition-delay:0.5s;
+}
+.section_4_main_more_1:hover .section_4_icon{
+  background: url(../images/sprites_header_footer.png) -9px -163px;
+  transition-delay:0.5s ;
+}

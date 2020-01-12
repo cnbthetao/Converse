@@ -2,7 +2,8 @@
   width: 100%;
   height: 130px;
   background: black;
-  overflow: hidden;
+  // overflow: hidden;
+  // position: relative;
 }
 .header-top {
   width: 1367.2px;
@@ -11,50 +12,321 @@
   padding-right: 84px;
   overflow: hidden;
   .logo {
-    float:left;
+    float: left;
     width: 163px;
     height: 21.59px;
     background: url(../images/login.png) 0 0 no-repeat transparent;
     margin-top: 30px;
   }
 }
- .header_question {
-   background:red;
-    float: right;
-    width: 80px;
-    height: 100%;
-    
+.header_question {
+  // background: red;
+  float: right;
+  width: 80px;
+  height: 100%;
+  
+  position: relative;
+  .icon_1 {
+    background-position: -169px -161px;
+    cursor: pointer;
   }
-  .header_search{
-    background:green;
-    float:right;
-    width:80px;
-    height:80px;
- 
+  .icon_1:hover{
+    background-position:-167px -1px ;
   }
-  .header_chat{
-    background: yellow;
-    float:right;
-    width:80px;
-    height:100%;
-  }
+}
 
-  .shopping_cart{
-    width:116px;
-    height:100%;
-    float:right;
-    background:blue;
+.icon_0 {
+  width: 30px;
+  height: 31px;
+  float: right;
+  // background: yellow;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -15px;
+  background: url(../images/sprites_header_footer.png);
+}
+.header_search {
+  // background: green;
+  float: right;
+  width: 80px;
+  height: 80px;
+  position: relative;
+ 
+  .icon_2 {
+    background-position: -137px -161px;
+    cursor: pointer;
   }
-  .information{
-    width:143.337px;
-    height:100%;
-    float: right;
-    background:pink;
+  .icon_2:hover{
+    background-position: -135px -1px;
   }
+}
+.header_chat {
+  // background: yellow;
+  float: right;
+  width: 80px;
+  height: 100%;
+  position: relative;
+  
+  .icon_3 {
+    cursor: pointer;
+    background-position: -95px -54px;
+  }
+  .icon_3:hover{
+    background-position: -135px -33px;
+  }
+}
+
+.shopping_cart {
+  width: 116px;
+  height: 100%;
+  float: right;
+  // background: blue;
+  position: relative;
+  a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 80px;
+    cursor: pointer;
+    margin-left: 35px;
+  }
+  .shopping_case {
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    top: 50%;
+    right: 0;
+    margin-top: -15px;
+    background: url(../images/sprites_header_footer.png) scroll -168px -97px no-repeat transparent;
+
+    .cartnum {
+      font-size: 18px;
+      color: white;
+      line-height: 28px;
+      margin-left: 9px;
+    }
+  }
+}
+.information {
+  width: 143.337px;
+  height: 100%;
+  float: right;
+  // background: pink;
+  position: relative;
+  .wrap_information {
+    margin-left: 35px;
+    a {
+      font-size: 12px;
+      color: white;
+      line-height: 80px;
+      text-decoration: none;
+    }
+    span {
+      font-size: 12px;
+      color: white;
+      line-height: 80px;
+    }
+  }
+  .icon_4 {
+    background-position: -96px -85px;
+  }
+  .icon_4:hover{
+    background-position: -135px -65px;
+  }
+}
 .header-bot {
   width: 1367.2px;
   height: 50px;
   padding-left: 64px;
   padding-right: 84px;
   background: #333;
+  position: relative;
+  ul {
+    width: 672.5px;
+    height: 50px;
+    // background: blue;
+    margin: 0 auto;
+    li {
+      position: relative;
+      float: left;
+      width: 110px;
+      height: 100%;
+      padding: 0 12px;
+      text-align: center;
+      .wrap_choice {
+        width: 58.5px;
+        height: 50px;
+        margin: 0 auto;
+        cursor: pointer;
+        a {
+          font-size: 18px;
+          font-weight: normal;
+          color: white;
+          line-height: 35px;
+          text-decoration: none;
+        }
+      }
+      .wrap_choice a:hover{
+            text-decoration: underline;
+      }
+      .triangle {
+        border-color: white transparent transparent;
+        border-right: 6px solid transparent;
+        border-style: solid;
+        border-width: 6px;
+        position: absolute;
+        left: 60px;
+      }
+    }
+  }
+}
+
+.wrap_information a:hover{
+text-decoration: underline;
+}
+.shopping_cart a:hover{
+  text-decoration: underline;
+}
+
+.header-bot ul li:first-child:hover .boythings{
+  display: block;
+}
+.header-bot ul li:nth-child(2):hover .girlthings{
+  display: block;
+}
+.header-bot ul li:nth-child(3):hover .childrenthings{
+  display: block;
+}
+.boythings{
+  width:100vw;
+  height:262px;
+  position: absolute;
+  background: white;
+  display: none;
+  top:50px;
+  left:-423.35px;
+  z-index: 99;
+  animation: mymove 1s;
+  .line_1{
+    background: #999;
+    width:100%;
+    height: 1px;
+  }
+  ul{
+    width: 1000px;
+    height:130px;
+    margin: 0 auto;
+    // background: yellow;
+    li{
+      position: relative;
+      float: left;
+      width:130px;
+      height:130px;
+      img{
+        width:100%;
+        height: 100%;
+      }
+      span{
+        position: absolute;
+        left:65px ;
+        top: 100px;
+        color: black;
+      }
+      &:hover span{
+        color:#999;
+        text-decoration: underline;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+@keyframes mymove{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.girlthings{
+  width:100vw;
+  height:262px;
+  position: absolute;
+  background: white;
+  display: none;
+  top:50px;
+  left:-557.35px;
+  z-index: 99;
+  animation: mymove 1s ;
+  .line_1{
+    background: #999;
+    width:100%;
+    height: 1px;
+  }
+  ul{
+    width: 1000px;
+    height:130px;
+    margin: 0 auto;
+    // background: yellow;
+    li{
+      position: relative;
+      float: left;
+      width:130px;
+      height:130px;
+      img{
+        width:100%;
+        height: 100%;
+      }
+      span{
+        position: absolute;
+        left:65px ;
+        top: 100px;
+        color: black;
+      }
+      &:hover span{
+        color:#999;
+        text-decoration: underline;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+.childrenthings{
+  width:100vw;
+  height:130px;
+  position: absolute;
+  background: white;
+  display: none;
+  top:50px;
+  left:-696.35px;
+  z-index: 99;
+  animation: mymove 1s ;
+  ul{
+    width: 1000px;
+    height:130px;
+    margin: 0 auto;
+    // background: yellow;
+    li{
+      position: relative;
+      float: left;
+      width:130px;
+      height:130px;
+      img{
+        width:100%;
+        height: 100%;
+      }
+      span{
+        position: absolute;
+        left:50px ;
+        top: 100px;
+        color: black;
+      }
+      &:hover span{
+        color:#999;
+        text-decoration: underline;
+        transition: 0.2s;
+      }
+    }
+  }
 }

@@ -1,26 +1,70 @@
-$colors: (
-  a: #ffa,
-  b: #acc,
-  c: #bca,
-  d: #aff,
-  e: #fad,
-  f: #efa,
-  g: #dac,
-  h: #bcf,
-  i: #bad,
-  j: #1fa,
-  k: #3ab,
-  l: #6af,
-  m: #4fe
-);
+.nav_1 {
+  width: 100%;
+  height: 593.2px;
+  position: relative;
+  overflow: hidden;
 
-%box {
-  width: $page_container;
+  .nav_1_content {
+   width:100%;
+   height:100%;
+    img {
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+    }
+  }
+}
+.move_left {
+  background-color: #000;
+  opacity: 0.8;
+  width: 40px;
   height: 100px;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  z-index: 100;
+}
+.move_right {
+  background-color: #000;
+  opacity: 0.8;
+  width: 40px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  z-index: 100;
+}
+.move {
+  width: 21px;
+  height: 40px;
+  position: absolute;
+  background: yellow;
+  top: 50%;
+  right: 50%;
+  margin-top: -50%;
+  margin-right: -25%;
+  background: url(../images/homeslide_arrow.png) no-repeat;
+}
+.move_left .move {
+  background-position: 0 -45px;
 }
 
-.nav_1 {
-    @extend %box;
-    background: map-get($colors, d);
+.move_right .move {
+  background-position: 0 0;
+}
+
+
+#chatting_link{
+  top:200px;
+  width:88px;
+  height:88px;
+  position:absolute;
+  right:0;
+  z-index: 9999;
+  img{
+    width:100%;
+    height:100%;
   }
+
+}
