@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/details.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="header-bot"></div>
+
+    <div class="details-content">
+        <div class="details-content-top"></div>
+        <div class="details-main-content">
+            <div class="details-product-img">
+                <div class="namewraper">
+                    <h1 class="product-name">
+                        <span id="product-name">【男女同款】One Star</span>
+                        &nbsp;&nbsp;中性
+                    </h1>
+                    <div class="product-price">
+                        <span>价格</span>
+                        <span class="">¥599.00</span>
+                    </div>
+                </div>
+
+                <div class="product-img">
+                    <a href="">
+                        <div class="zoomPad">
+                            <img src="" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product-thumb-list">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="help"></div>
+    <div id="footer"></div>
+   
+   
+    <script src="./script/jquery.js"></script>
+    <script>
+        $('#header').load('header.html')
+    </script>
+
+    <script>
+        $('#footer').load('footer.html')
+    </script>
+    <script>
+        $('.header-bot').load('header-bot.html')
+    </script>
+    <script>
+        $('#help').load('help.html')
+        </script>
+</body>
+
+</html>

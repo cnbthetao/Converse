@@ -53,10 +53,20 @@
   margin:17px 0 17px 0;
   cursor: pointer;
 }
+.section_3_main_left_title:hover{
+  text-decoration: underline;
+  color:#999;
+  transition-delay:0.3s ;
+}
 .section_3_main_right_title{
   font-size:24px;
   margin:17px 0 17px 0;
   cursor: pointer;
+}
+.section_3_main_right_title:hover{
+  text-decoration: underline;
+  color:#999;
+  transition-delay:0.3s ;
 }
 .section_3_more{
   width:488px;
@@ -95,4 +105,9 @@
   height:30px;
   background: url(../images/sprites_header_footer.png) -9px -163px;
 }
+
+
+
+
+
 

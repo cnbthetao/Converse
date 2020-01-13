@@ -1,6 +1,6 @@
 #header {
   width: 100%;
-  height: 130px;
+  // height: 130px;
   background: black;
   // overflow: hidden;
   // position: relative;
@@ -24,14 +24,14 @@
   float: right;
   width: 80px;
   height: 100%;
-  
+
   position: relative;
   .icon_1 {
     background-position: -169px -161px;
     cursor: pointer;
   }
-  .icon_1:hover{
-    background-position:-167px -1px ;
+  .icon_1:hover {
+    background-position: -167px -1px;
   }
 }
 
@@ -52,12 +52,12 @@
   width: 80px;
   height: 80px;
   position: relative;
- 
+
   .icon_2 {
     background-position: -137px -161px;
     cursor: pointer;
   }
-  .icon_2:hover{
+  .icon_2:hover {
     background-position: -135px -1px;
   }
 }
@@ -67,12 +67,12 @@
   width: 80px;
   height: 100%;
   position: relative;
-  
+
   .icon_3 {
     cursor: pointer;
     background-position: -95px -54px;
   }
-  .icon_3:hover{
+  .icon_3:hover {
     background-position: -135px -33px;
   }
 }
@@ -131,7 +131,7 @@
   .icon_4 {
     background-position: -96px -85px;
   }
-  .icon_4:hover{
+  .icon_4:hover {
     background-position: -135px -65px;
   }
 }
@@ -167,8 +167,8 @@
           text-decoration: none;
         }
       }
-      .wrap_choice a:hover{
-            text-decoration: underline;
+      .wrap_choice a:hover {
+        text-decoration: underline;
       }
       .triangle {
         border-color: white transparent transparent;
@@ -182,151 +182,627 @@
   }
 }
 
-.wrap_information a:hover{
-text-decoration: underline;
+.wrap_information a:hover {
+  text-decoration: underline;
 }
-.shopping_cart a:hover{
+.shopping_cart a:hover {
   text-decoration: underline;
 }
 
-.header-bot ul li:first-child:hover .boythings{
+.header-bot ul li:first-child:hover .boythings {
   display: block;
 }
-.header-bot ul li:nth-child(2):hover .girlthings{
+.header-bot ul li:nth-child(2):hover .girlthings {
   display: block;
 }
-.header-bot ul li:nth-child(3):hover .childrenthings{
+.header-bot ul li:nth-child(3):hover .childrenthings {
   display: block;
 }
-.boythings{
-  width:100vw;
-  height:262px;
+.boythings {
+  width: 100vw;
+  height: 262px;
   position: absolute;
   background: white;
   display: none;
-  top:50px;
-  left:-423.35px;
+  top: 50px;
+  left: -423.35px;
   z-index: 99;
   animation: mymove 1s;
-  .line_1{
+  .line_1 {
     background: #999;
-    width:100%;
+    width: 100%;
     height: 1px;
   }
-  ul{
+  ul {
     width: 1000px;
-    height:130px;
+    height: 130px;
     margin: 0 auto;
     // background: yellow;
-    li{
+    li {
       position: relative;
       float: left;
-      width:130px;
-      height:130px;
-      img{
-        width:100%;
+      width: 130px;
+      height: 130px;
+      img {
+        width: 100%;
         height: 100%;
       }
-      span{
+      span {
         position: absolute;
-        left:65px ;
+        left: 65px;
         top: 100px;
         color: black;
       }
-      &:hover span{
-        color:#999;
+      &:hover span {
+        color: #999;
         text-decoration: underline;
         transition: 0.2s;
       }
     }
   }
 }
-@keyframes mymove{
-  from{
+@keyframes mymove {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
-.girlthings{
-  width:100vw;
-  height:262px;
+.girlthings {
+  width: 100vw;
+  height: 262px;
   position: absolute;
   background: white;
   display: none;
-  top:50px;
-  left:-557.35px;
+  top: 50px;
+  left: -557.35px;
   z-index: 99;
-  animation: mymove 1s ;
-  .line_1{
+  animation: mymove 1s;
+  .line_1 {
     background: #999;
-    width:100%;
+    width: 100%;
     height: 1px;
   }
-  ul{
+  ul {
     width: 1000px;
-    height:130px;
+    height: 130px;
     margin: 0 auto;
     // background: yellow;
-    li{
+    li {
       position: relative;
       float: left;
-      width:130px;
-      height:130px;
-      img{
-        width:100%;
+      width: 130px;
+      height: 130px;
+      img {
+        width: 100%;
         height: 100%;
       }
-      span{
+      span {
         position: absolute;
-        left:65px ;
+        left: 65px;
         top: 100px;
         color: black;
       }
-      &:hover span{
-        color:#999;
+      &:hover span {
+        color: #999;
         text-decoration: underline;
         transition: 0.2s;
       }
     }
   }
 }
-.childrenthings{
-  width:100vw;
-  height:130px;
+.childrenthings {
+  width: 100vw;
+  height: 130px;
   position: absolute;
   background: white;
   display: none;
-  top:50px;
-  left:-696.35px;
+  top: 50px;
+  left: -696.35px;
   z-index: 99;
-  animation: mymove 1s ;
-  ul{
+  animation: mymove 1s;
+  ul {
     width: 1000px;
-    height:130px;
+    height: 130px;
     margin: 0 auto;
     // background: yellow;
-    li{
+    li {
       position: relative;
       float: left;
-      width:130px;
-      height:130px;
-      img{
-        width:100%;
+      width: 130px;
+      height: 130px;
+      img {
+        width: 100%;
         height: 100%;
       }
-      span{
+      span {
         position: absolute;
-        left:50px ;
+        left: 50px;
         top: 100px;
         color: black;
       }
-      &:hover span{
-        color:#999;
+      &:hover span {
+        color: #999;
         text-decoration: underline;
         transition: 0.2s;
       }
     }
   }
+}
+
+.register-content {
+  width: 100%;
+  z-index: 101;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+.register-content-inner {
+  max-width: 1000px;
+  padding: 40px 0;
+  height: 317px;
+  margin: 0 auto;
+  // display: none;
+}
+.register-content-inner-left {
+  width: 150px;
+  height: 317px;
+  float: left;
+}
+.generic {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 150px;
+  text-align: left;
+}
+.signin {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.signin:after {
+  background: url(../images/sprites_header_footer.png) no-repeat scroll -10px -164px transparent;
+  width: 15px;
+  height: 28px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  margin-left: 12px;
+  content: "";
+}
+.register-content-wrap-inner {
+  width: 1000px;
+  height: 317px;
+  margin: 0 auto;
+  position: relative;
+  margin: 0 210px;
+}
+.register-line {
+  border-left: 1px solid #999;
+  margin: 0 60px;
+  float: left;
+  height: 317px;
+}
+.register-content-inner-right {
+  width: 300px;
+  height: 348.8px;
+  float: left;
+}
+.member {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+.accountname {
+  line-height: 38px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+#loginname {
+  border: 1px solid #999;
+  width: 100%;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px 5px 5px 18px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "tradegothic";
+}
+.accountpassword {
+  line-height: 38px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+#passWord {
+  border: 1px solid #999;
+  width: 300px;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px 5px 5px 18px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "tradegothic";
+}
+.register-verify {
+  line-height: 38px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.register-verify-inner {
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0 46px 0 46px;
+  height: 42px;
+  width: 100%;
+  line-height: 42px;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  text-align: left;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.verify-button {
+  line-height: 42px;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  position: initial;
+  display: inline;
+}
+.register-warning {
+  width: 300px;
+  height: 45px;
+  margin-top: 25px;
+  // margin-bottom: 20px;
+  position: relative;
+  text-indent: 30px;
+  font-size: 12px;
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+}
+.register-warning:before {
+  border: 2px solid #000;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0;
+  position: absolute;
+}
+.register-main {
+  background-color: #ccc;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.register-remind {
+  line-height: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  max-height: 40px;
+  margin-top: 5px;
+}
+.register-remember {
+  color: #000;
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  text-align: left;
+  text-indent: 30px;
+  width: auto;
+  position: relative;
+}
+.register-icon {
+  position: absolute;
+  background: url(../images/qqqq.png) no-repeat scroll -3px -181px transparent;
+  height: 18px;
+  width: 18px;
+  border: 2px solid #000;
+}
+.register-forget {
+  color: #000;
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+  text-align: right;
+  text-decoration: underline;
+  width: auto;
+}
+
+.zhuce {
+  width: 100%;
+  z-index: 101;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+.zhuce-content {
+  max-width: 1000px;
+  padding: 40px 0;
+  height: 317px;
+  margin: 0 auto;
+}
+.zhuce-inner-content {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.zhucetion {
+  width: 100%;
+  position: relative;
+  float: left;
+  height: 100%;
+}
+.zhucetion-top {
+  width: 100%;
+  float: left;
+}
+.zhuce-number {
+  font-size: 13px;
+  line-height: 20px;
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+}
+.number-box {
+  line-height: 40px;
+  margin: 10px 0 25px 0;
+  max-height: 40px;
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+}
+#mobile-box {
+  border: 1px solid #999;
+  width: 100%;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px 5px 5px 18px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "tradegothic";
+}
+.zhuce-email {
+  font-size: 13px;
+  line-height: 20px;
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+}
+#email-box {
+  border: 1px solid #999;
+  width: 100%;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px 5px 5px 18px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "tradegothic";
+}
+.zhuce-sex {
+  font-size: 13px;
+  line-height: 20px;
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  margin-right: 0 !important;
+}
+.zhuce-man {
+  color: #000;
+  cursor: pointer;
+  float: left;
+  text-align: left;
+  text-indent: 30px;
+  width: 50%;
+  position: relative;
+}
+.zhuce-man:before {
+  background: url(../images/qqqq.png) no-repeat scroll -3px -181px transparent;
+  border: 2px solid #000;
+  width: 18px;
+  height: 18px;
+  margin-top: -10px;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 50%;
+}
+.zhuce-woman{
+  color: #000;
+    cursor: pointer;
+    float: left;
+    text-align: left;
+    text-indent: 30px;
+    width: 50%;
+    position: relative;
+}
+.zhuce-woman:before{
+  //background: url(../images/qqqq.png) no-repeat scroll -3px -181px transparent;
+  border: 1px solid #999;
+  content: "";
+  height: 14px;
+  left: 0;
+  position: absolute;
+  width: 14px;
+  top: 50%;
+  margin-top: -7px;
+}
+.zhucetion-middle{
+  width: 100%;
+    float: left;
+}
+.zhuce-birth{
+  font-size: 13px;
+    line-height: 20px;
+    width: 30%;
+    float: left;
+    margin-right: 0!important;
+}
+.selectbox{
+  border: 1px solid #ddd;
+    box-sizing: border-box;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5%;
+    overflow: hidden;
+    width: 85px;
+    position: relative;
+}
+.selectbox:before {
+  background: url(../images/selectbg.png) no-repeat scroll center center #fff;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  content: "";
+  display: block;
+  height: 100%;
+  right: -1px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+  cursor: pointer;
+}
+
+.selectindex{
+  text-align: center;
+    font-size: 12px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left:0;
+    z-index: 0;
+    height: 100%;
+    line-height: inherit;
+    padding-right: 30px;
+    left: 0!important;
+    width: 90px;
+    color: #333!important;
+    box-sizing: border-box;
+}
+.zhucetion-bottom{
+  width: 100%;
+  float: left;
+  margin-right: 0!important;
+}
+.zhuce-yanzheng{
+  font-size: 13px;
+    line-height: 20px;
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+.zhuce-yanzheng-inner{
+  margin-top: 25px;
+  line-height: 40px;
+    margin: 25px 0 25px 0;
+    max-height: 40px;
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+}
+.zhuce-yanzheng-inner2{
+  position: relative;
+    
+    min-width: 300px;
+    height: 44px;
+}
+.zhuce-message{
+  font-size: 13px;
+    line-height: 20px;
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+.zhuce-message-inner{
+  margin-bottom: 5px;
+}
+#zhuce-message-box{
+  width: 47.61%;
+    margin-right: 4.78%;
+    float: left;
+    border: 1px solid #999;
+    
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 5px 5px 18px;
+    box-sizing: border-box;
+   
+    font-family: "tradegothic";
+}
+.send-message{
+  height: 40px;
+    display: inline-block;
+    width: 141px;
+    max-width: 142px;
+    min-width: 77px;
+    background-color: #848484;
+    h5{
+      color: white;
+    text-align: center;
+    }
+}
+.message-warning{
+  font-size: 13px;
+    line-height: 20px;
+    width: 30%;
+    float: left;
+    margin-right: 0!important;
+}
+.message-warning-inner{
+  text-indent: 30px;
+    width: auto;
+    a{
+      text-decoration: underline;
+      color: black;
+    }
+}
+.message-warning-inner:before{
+  border: 2px solid #000;
+  content: "";
+  height: 18px;
+  width: 18px;
+  right: 278px;
+  position: absolute;
+}
+.zhuce-zuizhong{
+  margin-top: 10px;
+  background-color: #ccc;
+  color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
 }
