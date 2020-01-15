@@ -8,16 +8,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheets/index.css">
     <link rel="stylesheet" href="./stylesheets/details.css">
+    <script src="../dist/bundle.js " defer async='true'></script>
 </head>
 
 <body>
     <div id="header"></div>
-    <div class="header-bot"></div>
+    <!-- <div class="header-bot"></div> -->
 
     <div class="details-content">
+        <div class="bf-wrap">
+            <div class="bf">
+                <img src="../src/images/nannvtongkuang.png" alt="" class="bpic">
+
+            </div>
+        </div>
+
+
         <div class="details-content-top"></div>
         <div class="details-main-content">
             <div class="details-product-img">
+
                 <div class="namewraper">
                     <h1 class="product-name">
                         <span id="product-name">【男女同款】One Star</span>
@@ -25,49 +35,112 @@
                     </h1>
                     <div class="product-price">
                         <span>价格</span>
-                        <span class="">¥599.00</span>
+                        <!-- <span class="">¥599.00</span> -->
                     </div>
                 </div>
 
                 <div class="product-img">
                     <a href="">
+                        <!-- 小图 -->
                         <div class="zoomPad">
                             <img src="" alt="">
+                            <div id="sf"></div>
                         </div>
                     </a>
                 </div>
 
                 <div class="product-thumb-list">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
                 </div>
             </div>
+            <div class="details-tab-list">
+
+                <div class="tab-wrap">
+                    <div class="tab-title">
+                        <div class="share-wrap">
+                            <i class="share"></i>
+                            <span>分享</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-wrap" style="margin-top: 20px;">
+                    <div class="collect-wrap">
+                        <div class="collect-inner-content">
+                            <i></i>
+                            <span>加入收藏（25）</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-wrap" style="margin-top: 20px;">
+                    <div class="star-wrap">
+                        <div class="star-wrap-inner">
+                            <span style="width: 100px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-product-right">
+                <div class="popup-btn">
+                    <i></i>
+                    <span id="size-chart-btn">尺码对照表</span>
+                </div>
+
+
+                <div class="product-select-num">
+                    <div class="select-line">
+                        <div class="text-left">数量</div>
+                        <div class="text-right">
+                            <input style="border: none;" type="text" id="num-select" value="1">
+                            <i></i>
+                            <select id="num-box">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <a class="now-buy-btn" id="now-buy-btn">
+                    <span>立即购买</span>
+                </a>
+                <a class="add-buycart-btn" id="add-buycart-btn">
+                    <span>
+                        <i></i>
+                        添加到购物车
+                    </span>
+                </a>
+            </div>
         </div>
+
+
+    </div>
+
+
     </div>
 
 
     <div id="help"></div>
     <div id="footer"></div>
-   
-   
+
+
     <script src="./script/jquery.js"></script>
     <script>
-        $('#header').load('header.html')
+        $('#header').load('header.html');
+        // $('.header-bot').load('header-bot.html');
+        $('#help').load('help.html');
+        $('#footer').load('footer.html');
+
     </script>
 
-    <script>
-        $('#footer').load('footer.html')
-    </script>
-    <script>
-        $('.header-bot').load('header-bot.html')
-    </script>
-    <script>
-        $('#help').load('help.html')
-        </script>
+
 </body>
 
 </html>

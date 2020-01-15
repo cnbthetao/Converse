@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/shoppingcart.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-----------------------内容-------------------------------------- -->
+    <div class="shoppingcart-wrap">
+        <div class="shoppingcart">
+            <div class="shopping-content">
+                <div class="shopping-inner-content">
+                    <div class="shopping-title">
+                        <p>您的购物车：0件商品</p>
+                    </div>
+
+                    <div class="checked-shopping">
+                        <div class="checked-all">
+                            <input type="checkbox">
+                            全选
+                            <span>您已选中
+                                <em></em>
+                                件商品
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="shop-cart-list">
+                        <div class="shop-list">
+                            <div class="shopcart-info-change">
+                                <div class="dui-content">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="remove-btn">
+                                    删除
+                                </div>
+                                <div class="editor-btn">
+                                    编辑
+                                </div>
+                            </div>
+
+                            <div class="goods-box">
+                                <div class="shopping-goods-img">
+                                    <a href=""></a>
+                                </div>
+
+                                <div class="shopping-goods-price">
+                                    <p>¥699.00</p>
+                                    <div class="shopcart-qty">
+                                        <label>数量</label>
+                                        <div class="goods-number">
+                                            <a class="numreduce" href="">
+                                                <i class="numreduce-icon"></i>
+                                            </a>
+                                            <input class="number-input" type="text" value="1">
+                                            <a class="numbermore" href="">
+                                                <i class="nummore-icon"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+
+
+
+                    </div>
+
+                    <div class="shoppingcart-checkout">
+
+                        <div class="shoppingcart-checkout-right">
+                            <div class="checkout-right-inner">
+                                <div class="checkout-price">
+                                    <div class="tit">商品原价：</div>
+                                    <div class="info">¥ 699.00</div>
+                                </div>
+    
+                                <div class="finally-checkout">
+                                    结算
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="footer"></div>
+
+    <script src="./script/jquery.js"></script>
+    <script>
+        $('#header').load('header.html')
+    </script>
+
+    <script>
+        $('#footer').load('footer.html')
+    </script>
+
+</body>
+
+</html>

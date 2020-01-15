@@ -1,0 +1,264 @@
+.shoppingcart-wrap{
+    margin-top: 250px;
+}
+
+
+.shoppingcart{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.shopping-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    min-width: 679px;
+}
+.shopping-inner-content{
+    margin-bottom: 20px;
+}
+.shopping-title{
+    width: 100%;
+    margin: 0 auto;
+}
+.shopping-title p{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 26px;
+}
+
+.checked-shopping{
+    margin-bottom: 8px;
+}
+
+.checked-all{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    padding-left: 28px;
+    cursor: pointer;
+}
+.checked-all input{
+    margin-right: 5px;
+}
+
+.checked-all span{
+    margin-left: 18px;
+    font-size: 14px;
+    color: #333;
+}
+
+.shop-cart-list{
+    border-top: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;
+    padding: 0 29px;
+}
+
+.shop-list{
+    border-bottom: 0;
+}
+
+.shopcart-info-change{
+    overflow: hidden;
+}
+
+.dui-content{
+    float: left;
+    width: 20px;
+    height: 50px;
+}
+
+.dui-content input{
+    margin-right: 5px;
+}
+
+
+.remove-btn{
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    position: relative;
+    text-align: right;
+    width: 58px;
+}
+
+.remove-btn:before{
+    background: url(../images/cart-sprite1.png) no-repeat scroll -24px -110px transparent;
+    content: "";
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 22px;
+}
+.editor-btn{
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    position: relative;
+    text-align: right;
+    width: 58px;
+}
+
+.editor-btn:before{
+    background: url(../images/cart-sprite1.png) no-repeat scroll 0 -113px transparent;
+    content: "";
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 22px;
+}
+
+.goods-box{
+    overflow: hidden;
+    padding-bottom: 28px;
+}
+
+.shopping-goods-img{
+    float: left;
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.shopping-goods-img a{
+    background: red;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    outline: medium none;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.shopping-goods-price{
+    float: right;
+}
+
+.shopping-goods-price{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #b63330;
+    text-align: right;
+}
+
+.shopcart-qty{
+    position: relative;
+    width: 120px;
+}
+.shopcart-qty label {
+    position: absolute;
+    top: 6px;
+    left: -12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.goods-number{
+    width: 92px;
+    height: 25px;
+    margin-top: 15px;
+    position: relative;
+    right: -26px;
+    border: 1px solid #bcbcbc;
+}
+.numreduce{
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.numreduce-icon{
+    display: inherit;
+    width: 25px;
+    height: 25px;
+    background: url(../images/minus_dark.png) no-repeat center center;
+}
+
+.number-input{
+    float: left;
+    display: block;
+    width: 38px;
+    height: 25px;
+    outline: 0;
+    padding: 0;
+    color: #999;
+    text-align: center;
+    border: 0;
+    border-left: 1px solid #bcbcbc;
+    border-right: 1px solid #bcbcbc;
+}
+.numbermore{
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: #333;
+    outline: medium none;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.nummore-icon{
+    display: inherit;
+    width: 25px;
+    height: 25px;
+    background: url(../images/add_dark.png) no-repeat center center;
+}
+
+.shoppingcart-checkout{
+    overflow: hidden;
+    padding-bottom: 92px;
+    
+}
+
+.shoppingcart-checkout-right{
+    float: right;
+    
+}
+
+.checkout-right-inner{
+    width: 242px;
+}
+.checkout-price{
+    overflow: hidden;
+}
+
+.tit{
+    float: left;
+    font-size: 18px;
+    color: #333;
+    line-height: 28px;
+}
+.info{
+    float: right;
+    font-size: 18px;
+    color: #333;
+    line-height: 28px;
+}
+.finally-checkout{
+    width: 198px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    background: #b63330;
+    position: relative;
+    right: -44px;
+    margin-top: 37px;
+    cursor: pointer;
+}
